@@ -1,0 +1,36 @@
+<html>
+
+<head>
+    <title>JAVASCRIPT</title>
+    <script>
+        
+        //template literal
+       class product{
+        constructor(id,category,name,cost){
+            this.pid=id
+            this.pcategory=category
+            this.pname=name
+            this.pcost=cost
+        }
+        
+        display(){
+            document.writeln("Product ID="+this.pid+"<br>")
+            document.writeln("Product Category="+this.pcategory+"<br>")
+            document.writeln("Product Name="+this.pname+"<br>")
+            document.writeln("Product Cost="+this.pcost+"<br>")
+        }
+       }
+
+         let p1=new product(1,"Mobile","iphone",56000.50)
+         p1.display()
+         let p2=new product(2,"Clothes","saree",2000.00)
+         p2.display()
+
+    </script>
+</head>
+
+<body>
+   
+</body>
+
+</html>

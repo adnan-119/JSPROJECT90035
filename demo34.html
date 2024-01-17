@@ -1,0 +1,44 @@
+<html>
+
+<head>
+    <title>JAVASCRIPT</title>
+    <script>
+        
+        //java script class and object
+        //class contains attributes/properties and methods/member functions
+        class student{
+            setdata(id,name,status){
+                //sid,sname,sstatus are attributes in Student class
+                this.sid=id
+                this.sname=name
+                this.sstatus=status
+
+            }
+            getdata(){
+                document.writeln( "Student ID="+this.sid+"</br>")
+                document.writeln( "Student name="+this.sname+"</br>")
+                document.writeln( "Student status="+this.sstatus+"</br>")
+            }
+        }
+
+        let s1=new student() //s1 is an object of student class
+        s1.setdata(1,"KLU",true)
+        s1.getdata()
+
+        let s2=new student() //s2 is an object of student class
+        s2.getdata(s2.setdata(2,"MSWD",false))
+        s2.getdata()
+
+        document.writeln(s1.sid+","+s1.sname+","+s1.sstatus+"</br>")
+        document.writeln(s2.sid+","+s2.sname+","+s2.sstatus+"</br>")
+
+
+
+    </script>
+</head>
+
+<body>
+   
+</body>
+
+</html>

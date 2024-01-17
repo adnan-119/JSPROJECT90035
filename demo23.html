@@ -1,0 +1,48 @@
+<html>
+
+<head>
+    <title>JAVASCRIPT</title>
+    <script>
+      function demo1(){
+        document.writeln(" I am in demo1 </br>")
+        {
+            var a=10
+            document.writeln("inside the block</br>")
+            document.writeln("a="+a+"</br>")
+        }
+        document.writeln("a="+a+"</br>")
+      }
+      demo1()
+
+      function demo2(){
+        document.writeln(" I am in demo2 </br>")
+        {
+            let a=10
+            document.writeln("inside the block</br>")
+            document.writeln("a="+a+"</br>") //here we got a in the output because it si block scopte
+        }
+        //document.writeln("a="+a+"</br>")// here we got error becaus it is out of the block
+      }
+      demo2()
+
+      function demo3(){
+        document.writeln(" I am in demo3 </br>")
+        {
+            const a=30
+            // a=20 re-assignment is not possible
+            document.writeln("inside the block</br>")
+            document.writeln("a="+a+"</br>")
+        }
+        document.writeln("a="+a+"</br>")
+      }
+      demo3()
+
+
+    </script>
+</head>
+
+<body>
+   
+</body>
+
+</html>
